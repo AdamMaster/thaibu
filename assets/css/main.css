@@ -1484,6 +1484,7 @@ h2 {
   }
 
   .wrapper-overflow {
+    padding-bottom: 0;
     background-image: url(../images/abstract-bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: 47% -270px;
