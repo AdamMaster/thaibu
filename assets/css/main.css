@@ -45,7 +45,7 @@ section {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
@@ -988,10 +988,6 @@ h2 {
   opacity: .8;
 }
 
-.why-text b {
-  font-weight: 600;
-}
-
 .why-button {
   width: 242px;
   margin-top: 34px;
@@ -1018,10 +1014,6 @@ h2 {
 
 .how-heading {
   margin-bottom: 40px;
-}
-
-.how-heading br {
-  display: none;
 }
 
 .how-content {
@@ -1489,7 +1481,6 @@ h2 {
   }
 
   .button {
-    padding: 0 11px;
     font-size: 0.875rem;
   }
 
@@ -1498,7 +1489,6 @@ h2 {
   }
 
   .wrapper-overflow {
-    padding-bottom: 0;
     background-image: url(../images/abstract-bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: 47% -270px;
@@ -1538,7 +1528,7 @@ h2 {
   }
 
   .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .footer-email-link {
@@ -1583,8 +1573,8 @@ h2 {
 
   .hero {
     padding-top: 116px;
-    background-position: 50% -60%;
-    background-position-y: -90px;
+    background-position: 50% 0;
+    background-position-y: -60px;
   }
 
   .hero-heading {
@@ -1620,10 +1610,6 @@ h2 {
   .short-advantage-icon-image {
     width: 32px;
     height: 32px;
-  }
-
-  .how-item .short-advantage-icon-image {
-    translate: 0 3px;
   }
 
   .short-advantage-text {
@@ -1666,6 +1652,10 @@ h2 {
     margin-top: 20px;
   }
 
+  .partner-card-desc {
+    font-size: 0.875rem;
+  }
+
   .advantages-title {
     margin-bottom: 60px;
     font-size: 1.625rem;
@@ -1704,7 +1694,6 @@ h2 {
   }
 
   .why-heading {
-    width: 200px;
     margin-bottom: 28px;
   }
 
@@ -1741,10 +1730,6 @@ h2 {
 
   .how-heading {
     margin-bottom: 28px;
-  }
-
-  .how-heading br {
-    display: block;
   }
 
   .how-content {
@@ -1828,7 +1813,17 @@ h2 {
 
   .footer-bottom-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 0.8125rem;
+    line-height: 16px;
+  }
+
+  .footer-bottom-link {
+    font-size: 0.8125rem;
+    line-height: 16px;
   }
 
   .how-banner {
