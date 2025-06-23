@@ -103,7 +103,7 @@ const swiperPartners = new Swiper(".from-partner .swiper", {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1.5,
+			slidesPerView: 1.4,
 			spaceBetween: 15
 		},
 		480: {
@@ -208,7 +208,7 @@ class Accordion {
 				const activeItem = itemElements[this.activeIndex];
 				const activeContent = activeItem.querySelector(this.contentSelector);
 				activeItem.classList.add('active');
-				if (activeContent) activeContent.style.height = window.innerWidth >= 576 ? `${contentElement.scrollHeight}px` : '120px';
+				if (activeContent) activeContent.style.height = window.innerWidth >= 576 ? '300px' : '120px';
 			}
 
 			accordionElement.addEventListener('click', e => {
@@ -224,11 +224,11 @@ class Accordion {
 	}
 
 	toggle(target, itemElements, contentElements) {
-		const currentElement = target.parentNode;
-		if (!currentElement) return;
+		const currentElement = target.parentNode
+		if (!currentElement) return
 
-		const contentElement = currentElement.querySelector(this.contentSelector);
-		if (!contentElement) return;
+		const contentElement = currentElement.querySelector(this.contentSelector)
+		if (!contentElement) return
 
 		const isActive = currentElement.classList.contains('active')
 
@@ -238,11 +238,11 @@ class Accordion {
 
 
 		if (!isActive) {
-			currentElement.classList.add('active');
-			contentElement.style.height = window.innerWidth >= 576 ? `${contentElement.scrollHeight}px` : '120px';
+			currentElement.classList.add('active')
+			contentElement.style.height = window.innerWidth >= 576 ? '300px' : '120px'
 		} else {
-			currentElement.classList.remove('active');
-			contentElement.style.height = ``;
+			currentElement.classList.remove('active')
+			contentElement.style.height = ``
 		}
 	}
 }

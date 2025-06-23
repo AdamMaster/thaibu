@@ -6,6 +6,7 @@
   --c-black: #17171F;
   --radius: 40px;
   --transition: 0.2s;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +45,7 @@ section {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
@@ -738,8 +739,10 @@ h2 {
 }
 
 .short-advantage-icon-image {
-  width: 38px;
-  height: 38px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  translate: 0 4px;
 }
 
 .short-advantage-title {
@@ -987,10 +990,6 @@ h2 {
   opacity: .8;
 }
 
-.why-text b {
-  font-weight: 600;
-}
-
 .why-button {
   width: 242px;
   margin-top: 34px;
@@ -1017,10 +1016,6 @@ h2 {
 
 .how-heading {
   margin-bottom: 40px;
-}
-
-.how-heading br {
-  display: none;
 }
 
 .how-content {
@@ -1100,13 +1095,17 @@ h2 {
   overflow: hidden;
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  translate: 0 -50%;
+  width: auto;
+  height: auto;
+  max-width: max-content;
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition);
   background: linear-gradient(167deg, rgba(67, 97, 238, 1) 0%, rgba(167, 183, 255, 1) 100%);
+  object-fit: contain;
 }
 
 .tabs-content.active {
@@ -1197,7 +1196,7 @@ h2 {
 }
 
 .tabs-item-expand-image {
-  margin-top: -30px;
+  margin-top: -26px;
 }
 
 @media (max-width: 1400px) {
@@ -1484,7 +1483,6 @@ h2 {
   }
 
   .button {
-    padding: 0 11px;
     font-size: 0.875rem;
   }
 
@@ -1493,7 +1491,6 @@ h2 {
   }
 
   .wrapper-overflow {
-    padding-bottom: 0;
     background-image: url(../images/abstract-bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: 47% -270px;
@@ -1533,7 +1530,7 @@ h2 {
   }
 
   .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .footer-email-link {
@@ -1578,8 +1575,8 @@ h2 {
 
   .hero {
     padding-top: 116px;
-    background-position: 50% -60%;
-    background-position-y: -90px;
+    background-position: 50% 0;
+    background-position-y: -60px;
   }
 
   .hero-heading {
@@ -1657,6 +1654,10 @@ h2 {
     margin-top: 20px;
   }
 
+  .partner-card-desc {
+    font-size: 0.875rem;
+  }
+
   .advantages-title {
     margin-bottom: 60px;
     font-size: 1.625rem;
@@ -1695,7 +1696,6 @@ h2 {
   }
 
   .why-heading {
-    width: 200px;
     margin-bottom: 28px;
   }
 
@@ -1732,10 +1732,6 @@ h2 {
 
   .how-heading {
     margin-bottom: 28px;
-  }
-
-  .how-heading br {
-    display: block;
   }
 
   .how-content {
@@ -1819,7 +1815,17 @@ h2 {
 
   .footer-bottom-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 0.8125rem;
+    line-height: 16px;
+  }
+
+  .footer-bottom-link {
+    font-size: 0.8125rem;
+    line-height: 16px;
   }
 
   .how-banner {
