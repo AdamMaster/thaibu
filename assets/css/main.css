@@ -1610,8 +1610,13 @@ h2 {
   }
 
   .short-advantage-icon-image {
+    translate: 0 2px;
     width: 32px;
     height: 32px;
+  }
+
+  .how-item .short-advantage-icon-image {
+    translate: 0 3px;
   }
 
   .short-advantage-text {
