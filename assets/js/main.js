@@ -103,7 +103,7 @@ const swiperPartners = new Swiper(".from-partner .swiper", {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1.4,
+			slidesPerView: 1.5,
 			spaceBetween: 15
 		},
 		480: {
