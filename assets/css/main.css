@@ -223,6 +223,7 @@ h2 {
 .language {
   user-select: none;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .language-current {
@@ -598,6 +599,7 @@ h2 {
 
 .footer-subscribe {
   max-width: 350px;
+  width: 350px;
 }
 
 
