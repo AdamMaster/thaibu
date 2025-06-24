@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--c-light);
-  font-family: "Montserrat", sans-serif;
+  font-family: "NotoSansThai", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -45,7 +45,7 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 1.2;
 }
 
@@ -76,7 +76,7 @@ h2 {
   padding: 0 25px;
   border-radius: 8px;
   transition: background var(--transition), color var(--transition), translate .1s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "NotoSansThai", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--c-black);
@@ -118,6 +118,7 @@ h2 {
 .input {
   border: 0;
   background: transparent;
+  font-family: 'NotoSansThai', sans-serif;
 }
 
 .header {
@@ -184,6 +185,7 @@ h2 {
 }
 
 .logo {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1;
@@ -311,6 +313,7 @@ h2 {
   width: 147px;
   height: 46px;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .mobile-overlay {
@@ -698,12 +701,20 @@ h2 {
   margin-bottom: 18px;
 }
 
+.hero-heading span {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .hero-subheading {
-  max-width: 1028px;
+  max-width: 720px;
   margin-bottom: 60px;
   font-size: 1.375rem;
   line-height: 1.4;
   color: var(--c-grey);
+}
+
+.hero-subheading br {
+  display: none;
 }
 
 .hero-items {
@@ -779,6 +790,10 @@ h2 {
 .from-partner-heading {
   margin-bottom: 16px;
   text-align: center;
+}
+
+.from-partner-heading br {
+  display: none;
 }
 
 .from-partner-subheading {
@@ -972,6 +987,10 @@ h2 {
   text-align: left;
 }
 
+.why-heading span {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .why-subheading {
   margin-bottom: 20px;
   font-size: 1.25rem;
@@ -986,6 +1005,10 @@ h2 {
 
 .why-text {
   opacity: .8;
+}
+
+.why-text b {
+  font-weight: 600;
 }
 
 .why-button {
@@ -1014,6 +1037,10 @@ h2 {
 
 .how-heading {
   margin-bottom: 40px;
+}
+
+.how-heading br {
+  display: none;
 }
 
 .how-content {
@@ -1481,6 +1508,7 @@ h2 {
   }
 
   .button {
+    padding: 0 11px;
     font-size: 0.875rem;
   }
 
@@ -1489,6 +1517,7 @@ h2 {
   }
 
   .wrapper-overflow {
+    padding-bottom: 0;
     background-image: url(../images/abstract-bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: 47% -270px;
@@ -1528,7 +1557,7 @@ h2 {
   }
 
   .footer-logo {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .footer-email-link {
@@ -1573,8 +1602,8 @@ h2 {
 
   .hero {
     padding-top: 116px;
-    background-position: 50% 0;
-    background-position-y: -60px;
+    background-position: 50% -60%;
+    background-position-y: -90px;
   }
 
   .hero-heading {
@@ -1585,6 +1614,10 @@ h2 {
   .hero-subheading {
     margin-bottom: 30px;
     font-size: 1rem;
+  }
+
+  .hero-subheading br {
+    display: block;
   }
 
   .hero-item {
@@ -1610,6 +1643,10 @@ h2 {
   .short-advantage-icon-image {
     width: 32px;
     height: 32px;
+  }
+
+  .how-item .short-advantage-icon-image {
+    translate: 0 3px;
   }
 
   .short-advantage-text {
@@ -1638,6 +1675,10 @@ h2 {
     line-height: 22px;
   }
 
+  .from-partner-heading br {
+    display: block;
+  }
+
   .partner-card {
     padding: 10px;
   }
@@ -1650,10 +1691,6 @@ h2 {
   .from-partner-button {
     width: 100%;
     margin-top: 20px;
-  }
-
-  .partner-card-desc {
-    font-size: 0.875rem;
   }
 
   .advantages-title {
@@ -1694,6 +1731,7 @@ h2 {
   }
 
   .why-heading {
+    width: 200px;
     margin-bottom: 28px;
   }
 
@@ -1730,6 +1768,10 @@ h2 {
 
   .how-heading {
     margin-bottom: 28px;
+  }
+
+  .how-heading br {
+    display: block;
   }
 
   .how-content {
@@ -1813,17 +1855,7 @@ h2 {
 
   .footer-bottom-links {
     flex-direction: column;
-    gap: 8px;
-  }
-
-  .footer-copyright {
-    font-size: 0.8125rem;
-    line-height: 16px;
-  }
-
-  .footer-bottom-link {
-    font-size: 0.8125rem;
-    line-height: 16px;
+    gap: 10px;
   }
 
   .how-banner {
